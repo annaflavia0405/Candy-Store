@@ -1,0 +1,616 @@
+* {
+    transition: 0.5s;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* grid */
+
+header>ul {
+    display: grid;
+    grid-template-columns: 9vw 8vw 8vw 8vw 1fr 8vw 4vw;
+    column-gap: 1vw;
+    grid-template-rows: 48vw;
+    justify-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+/* sem grid */
+
+:root {
+    --bg-color: #f7b7d4;
+    --color-title: #ed438d;
+    --color: #000;
+    --imgtema: url(imagens/brilho-e-contraste\ \(2\).png);
+    --bg-color-title: #FFEDE8;
+    --hr-bg: #84D0FB;
+    --img-parceiros: url(imagens/Inicio\ -\ modoClaro.png);
+    --img-rodape: url(imagens/Rodapé-modoClaro.png);
+    --img-carrossel: url(imagens/Promocoes-3-ModoClaro.png);
+}
+
+.dark {
+    --bg-color: #af1f68;
+    --color-title: #ffdfd5;
+    --color: #fff;
+    --imgtema: url(imagens/lua.png);
+    --bg-color-title: #1E83BD;
+    --hr-bg: #E3C564;
+    --img-parceiros: url(imagens/Inicio\ -\ modoEscuro.png);
+    --img-rodape: url(imagens/Rodapé-modoEscuro.png);
+    --img-carrossel: url(imagens/Promocoes-3-ModoEscuro.png);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Header */
+
+header {
+    background-image: url(imagens/Banner.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#back {
+    background-color: #f7b7d4;
+    height: 15px;
+    width: 100%;
+}
+
+header>ul {
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    margin-top: 20px;
+}
+
+header>ul>li {
+    background-color: #af1f68;
+    width: 7vw;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+#ativo {
+    background-color: #ed438d;
+}
+
+header>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+#imagem {
+    background-color: white;
+    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
+    position: relative;
+}
+
+#imagem>a>img {
+    width: 18vw;
+    height: 10vw;
+    position: absolute;
+    left: -87px;
+    margin-top: -7px;
+    transform: rotate(-18deg);
+}
+
+#pesq {
+    width: 400px;
+    justify-self: end;
+    display: flex;
+}
+
+#pesq img {
+    height: 40px;
+}
+
+#pesq input {
+    width: 340px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    padding-left: 20px;
+    background-color: #af1f68;
+    border: none;
+}
+
+header>ul>button {
+    height: 50px;
+    width: 50px;
+    background-image: var(--imgtema);
+    background-repeat: no-repeat;
+    background-color: #af1f68;
+    background-position: center;
+    background-size: auto;
+    border-radius: 100%;
+    border: none;
+}
+
+header>h1 {
+    font-family: "Henny Penny", system-ui;
+    color: #af1f68;
+    font-size: 210px;
+    text-align: center;
+    top: 340px;
+    left: 370px;
+    font-weight: 100;
+    position: absolute;
+}
+
+header>h4 {
+    font-family: "Henny Penny", system-ui;
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+    top: 680px;
+    left: 670px;
+    font-weight: 100;
+    position: absolute;
+}
+
+hr {
+    height: 10px;
+    background-color: var(--hr-bg);
+    border: none;
+}
+
+#back-color {
+    background-color: #ffdfd5;
+}
+
+#back-color-var {
+    background-color: var(--bg-color);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #af1f68;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    transition: 0.5ms;
+    display: none;
+    position: absolute;
+    background-color: #fddbdb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-family: "Outfit", sans-serif;
+    color: #af1f68;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(253, 210, 199);
+    transition: 0.3ms;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Sec01 */
+
+#sec01 {
+    margin-top: 30px;
+}
+
+#sec01>#produtos {
+    background-color: var(--bg-color-title);
+    height: 105px;
+    width: 75vw;
+    font-family: "Henny Penny", system-ui;
+    color: var(--color-title);
+    font-size: 40px;
+    margin-left: 245px;
+    padding: 30px;
+}
+
+#imgprod {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    justify-items: center;
+}
+
+
+#imgprod>img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 40px;
+}
+
+#imgprod>img:hover{
+  filter: brightness(0.7);
+    transition: 0.3s;
+}
+
+/* Sec02 */
+
+#sec02{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sec02>#promocoes {
+    background-color: var(--bg-color-title);
+    height: 105px;
+    width: 75vw;
+    font-family: "Henny Penny", system-ui;
+    color: var(--color-title);
+    font-size: 40px;
+    margin-left: 245px;
+    padding: 30px;
+}
+
+.secao-depoimentos {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.titulo-secao {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.carrossel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Impede que a página pule ao clicar nas âncoras */
+.ancora {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Janela do cartão que corta os slides excedentes */
+.janela-cartao {
+  width: 78%;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+/* Trilho horizontal com 300% de largura (100% por slide) */
+.trilho {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Cada slide ocupa 1/3 do trilho */
+.slide {
+  display: flex;
+  width: 1303px;
+  height: 100%;
+}
+
+.slide>div #img-var{
+    background-image: var(--img-carrossel);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.coluna-imagem {
+  flex: 1;
+  height: 100%;
+  width: 100px;
+}
+
+.coluna-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Linha do tempo da rolagem lateral automática */
+@keyframes rolarParaOLado {
+  0%, 28%   { transform: translateX(0%); }        /* Slide 1 */
+  33%, 61%  { transform: translateX(-33.3333%); } /* Desliza para Slide 2 */
+  66%, 95%  { transform: translateX(-66.6666%); } /* Desliza para Slide 3 */
+  100%      { transform: translateX(0%); }        /* Retorna ao Slide 1 */
+}
+
+/* Controle manual ao clicar nas setas ou bolinhas */
+#slide-1:target ~ .janela-cartao .trilho {
+  animation: none;
+  transform: translateX(0%);
+}
+#slide-2:target ~ .janela-cartao .trilho {
+  animation: none;
+  transform: translateX(-33.3333%);
+}
+#slide-3:target ~ .janela-cartao .trilho {
+  animation: none;
+  transform: translateX(-66.6666%);
+}
+
+/* Setas externas (PREV / NEXT) */
+.setas-grupo {
+  display: none;
+  color:var(--color-title);
+}
+
+/* Exibe o par de setas correspondente ao estado atual */
+.carrossel-wrapper:not(:has(.ancora:target)) .s1,
+#slide-1:target ~ .s1,
+#slide-2:target ~ .s2,
+#slide-3:target ~ .s3 {
+  display: block;
+}
+
+.controle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: var(--color-title);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.controle span {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: var(--color-title);
+}
+
+.prev { left: 2%; }
+.next { right: 2%; }
+
+/* Paginação inferior (Bolinhas) */
+.paginacao {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.ponto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #0c5268;
+  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Sincroniza as bolinhas tanto no modo automático quanto no clique manual */
+.carrossel-wrapper:not(:has(.ancora:target)) .p1 {
+  animation: bolinha1 12s infinite;
+}
+.carrossel-wrapper:not(:has(.ancora:target)) .p2 {
+  animation: bolinha2 12s infinite;
+}
+.carrossel-wrapper:not(:has(.ancora:target)) .p3 {
+  animation: bolinha3 12s infinite;
+}
+
+#slide-1:target ~ .paginacao .p1,
+#slide-2:target ~ .paginacao .p2,
+#slide-3:target ~ .paginacao .p3 {
+  animation: none;
+  background-color: #89c7fa;
+  border-color: #89c7fa;
+}
+
+@keyframes bolinha1 {
+  0%, 30%, 98%, 100% { background-color: #89c7fa; border-color: #89c7fa; }
+  33%, 95%           { background-color: transparent; border-color: #89c7fa; }
+}
+@keyframes bolinha2 {
+  0%, 30%, 64%, 100% { background-color: transparent; border-color: #89c7fa; }
+  33%, 61%           { background-color: #89c7fa; border-color: #89c7fa; }
+}
+@keyframes bolinha3 {
+  0%, 63%, 98%, 100% { background-color: transparent; border-color: #89c7fa; }
+  66%, 95%           { background-color: #89c7fa; border-color: #89c7fa; }
+}
+
+/* Sec03 */
+
+#sec03 {
+    margin-top: 50px;
+}
+
+#container {
+    display: flex;
+}
+
+#parceiros {
+    background-color: var(--bg-color-title);
+    height: 110px;
+    width: 80vw;
+    font-family: "Henny Penny", system-ui;
+    color: var(--color-title);
+    font-size: 50px;
+    margin-left: 190px;
+    padding: 30px;
+    text-align: center;
+}
+
+#logo-parceiros {
+    display: grid;
+    grid-template-columns: 15vw 15vw;
+    grid-template-rows: 15vw 15vw;
+    margin-top: 40px;
+}
+
+#logo-parceiros>div {
+    border-radius: 50%;
+    width: 13vw;
+    height: 13vw;
+}
+
+#logo-parceiros>div>a>img {
+    width: 38vw;
+    height: 23vw;
+    margin-top: -60px;
+    margin-left: -360px;
+}
+
+#mascote>img {
+    width: 60vw;
+    height: 40vw;
+    margin-top: -10px;
+    margin-left: 60px;
+    background-image: var(--img-parceiros);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* footer */
+
+#img{
+  background-color: #ffe0ce;
+  background-image: var(--img-rodape);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+#footer-text{
+  display: flex;
+  margin-top: -100px;
+  background-color: #ffe0ce;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-info{
+  text-align: center;
+  width: 450px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Footer Redes Sociais */
+
+.rodape-info>h1{
+  font-family: "Henny Penny", system-ui;
+  color: #ed438d;
+  margin-bottom: 30px;
+}
+
+.rodape-info>ul{
+  list-style: none;
+}
+
+#redes{
+  display: flex;
+}
+
+#redes>li img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Footer Outras Páginas */
+
+#paginas{
+  text-align: left;
+  font-family: "Outfit", sans-serif;
+}
+
+#paginas>li{
+  margin-bottom: 10px;
+}
+
+#paginas>li>a{
+  text-decoration: none;
+  color: #af1f68;
+}
+
+/* Footer Envio*/
+
+#comentarios>li>input{
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: #84D0FB;
+}
+
+#comentarios>li>input::placeholder{
+  color: #1E83BD;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+#comentarios>li>button{
+  border: none;
+  color: #af1f68;
+  background-color: #f7b7d4;
+  width: 70px;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+

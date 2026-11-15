@@ -1,0 +1,451 @@
+* {
+    transition: 0.3s;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* grid */
+
+header>ul {
+    display: grid;
+    grid-template-columns: 9vw 8vw 8vw 8vw 1fr 8vw 4vw;
+    column-gap: 1vw;
+    grid-template-rows: 48vw;
+    justify-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+/* sem grid */
+
+:root {
+    --bg-color: #f7b7d4;
+    --color-title: #ed438d;
+    --color: #000;
+    --imgtema: url(imagens/brilho-e-contraste\ \(2\).png);
+    --bg-color-title: #FFEDE8;
+    --hr-bg: #84D0FB;
+    --img-parceiros: url(imagens/Inicio\ -\ modoClaro.png);
+    --img-rodape: url(imagens/Rodapé-modoClaro.png);
+}
+
+.dark {
+    --bg-color: #af1f68;
+    --color-title: #ffdfd5;
+    --color: #fff;
+    --imgtema: url(imagens/lua.png);
+    --bg-color-title: #1E83BD;
+    --hr-bg: #E3C564;
+    --img-parceiros: url(imagens/Inicio\ -\ modoEscuro.png);
+    --img-rodape: url(imagens/Rodapé-modoEscuro.png);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Header */
+
+header {
+    background-image: url(imagens/Banner.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#back {
+    background-color: #f7b7d4;
+    height: 15px;
+    width: 100%;
+}
+
+header>ul {
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    margin-top: 20px;
+}
+
+header>ul>li {
+    background-color: #af1f68;
+    width: 7vw;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+#ativo {
+    background-color: #ed438d;
+}
+
+header>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+#imagem {
+    background-color: white;
+    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
+    position: relative;
+}
+
+#imagem>a>img {
+    width: 18vw;
+    height: 10vw;
+    position: absolute;
+    left: -87px;
+    margin-top: -7px;
+    transform: rotate(-18deg);
+}
+
+#pesq {
+    width: 400px;
+    justify-self: end;
+    display: flex;
+}
+
+#pesq img {
+    height: 40px;
+}
+
+#pesq input {
+    width: 340px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    padding-left: 20px;
+    background-color: #af1f68;
+    border: none;
+}
+
+header>ul>button {
+    height: 50px;
+    width: 50px;
+    background-image: var(--imgtema);
+    background-repeat: no-repeat;
+    background-color: #af1f68;
+    background-position: center;
+    background-size: auto;
+    border-radius: 100%;
+    border: none;
+}
+
+header>h1 {
+    font-family: "Henny Penny", system-ui;
+    color: #af1f68;
+    font-size: 210px;
+    text-align: center;
+    top: 340px;
+    left: 370px;
+    font-weight: 100;
+    position: absolute;
+}
+
+header>h4 {
+    font-family: "Henny Penny", system-ui;
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+    top: 680px;
+    left: 670px;
+    font-weight: 100;
+    position: absolute;
+}
+
+hr {
+    height: 10px;
+    background-color: var(--hr-bg);
+    border: none;
+}
+
+#back-color {
+    background-color: #ffdfd5;
+}
+
+#back-color-var {
+    background-color: var(--bg-color);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #af1f68;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    transition: 0.5ms;
+    display: none;
+    position: absolute;
+    background-color: #fddbdb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-family: "Outfit", sans-serif;
+    color: #af1f68;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(253, 210, 199);
+    transition: 0.3ms;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Sec01 */
+
+#sec01 {
+    margin-top: 30px;
+}
+
+#Carrinho {
+    background-color: var(--bg-color-title);
+    height: 105px;
+    width: 75vw;
+    font-family: "Henny Penny", system-ui;
+    color: var(--color-title);
+    font-size: 40px;
+    margin-left: 245px;
+    padding: 30px;
+    margin-bottom: 90px;
+}
+
+#middle-line {
+    width: 60vw;
+    margin: 70px;
+    margin-left: 400px;
+}
+
+.prod {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 300px;
+    object-fit: cover;
+}
+
+.prod:hover{
+    filter: brightness(0.7);
+    transition: 0.3s;
+}
+
+
+#container {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+#container>div {
+    padding-left: 70px;
+}
+
+#container>div>h1 {
+    font-family: "Henny Penny", system-ui;
+    color: var(--color);
+    font-weight: 100;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    font-size: 30px;
+}
+
+#container>div>button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FFEDE8;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    color: #af1f68;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 30px;
+    margin-top: 130px;
+    margin-left: 20px;
+}
+
+#number-gc{
+    margin-left: 170px;
+}
+
+.preco {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    padding-left: 200px;
+    font-size: 30px;
+    color: var(--color);
+}
+
+/* Sec02 */
+
+#sec02 {
+    margin-top: 30px;
+}
+
+#Pagamento {
+    background-color: var(--bg-color-title);
+    height: 105px;
+    width: 75vw;
+    font-family: "Henny Penny", system-ui;
+    color: var(--color-title);
+    font-size: 40px;
+    margin-left: 245px;
+    padding: 30px;
+    margin-bottom: 90px;
+}
+
+#sec02>#container>div>p {
+    font-family: "Outfit", sans-serif;
+    color: #000;
+    font-size: 25px;
+    margin-left: 300px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+#sec02>#container>div>p:hover {
+    color: var(--color-title);
+}
+
+#sec02>#container>button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FFEDE8;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    color: #af1f68;
+    margin-top: 30vh;
+}
+
+#sec02>#container {
+    display: flex;
+}
+
+#sec02>#container>div {
+    margin-right: 45vw;
+}
+
+/* footer */
+
+#img{
+  background-color: #ffe0ce;
+  background-image: var(--img-rodape);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+#footer-text{
+  display: flex;
+  margin-top: -100px;
+  background-color: #ffe0ce;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-info{
+  text-align: center;
+  width: 450px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Footer Redes Sociais */
+
+.rodape-info>h1{
+  font-family: "Henny Penny", system-ui;
+  color: #ed438d;
+  margin-bottom: 30px;
+}
+
+.rodape-info>ul{
+  list-style: none;
+}
+
+#redes{
+  display: flex;
+}
+
+#redes>li img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Footer Outras Páginas */
+
+#paginas{
+  text-align: left;
+  font-family: "Outfit", sans-serif;
+}
+
+#paginas>li{
+  margin-bottom: 10px;
+}
+
+#paginas>li>a{
+  text-decoration: none;
+  color: #af1f68;
+}
+
+/* Footer Envio*/
+
+#comentarios>li>input{
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: #84D0FB;
+}
+
+#comentarios>li>input::placeholder{
+  color: #1E83BD;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+#comentarios>li>button{
+  border: none;
+  color: #af1f68;
+  background-color: #f7b7d4;
+  width: 70px;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 300px;
+}
